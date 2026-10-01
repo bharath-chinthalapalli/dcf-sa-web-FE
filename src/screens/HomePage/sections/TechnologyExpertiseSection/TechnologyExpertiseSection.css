@@ -1,0 +1,22 @@
+.marquee {
+  animation: marquee-scroll 20s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Hide scrollbar for all browsers */
+.marquee::-webkit-scrollbar {
+  display: none;
+}
+.marquee {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
